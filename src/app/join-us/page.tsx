@@ -22,7 +22,7 @@ export default function joinus() {
 
       <RegistrationForm/>
 
-      <p className="mt-4">By joining the association, you'll have the opportunity to lay a strong foundation for our community, meet new people, learn new skills, share your ideas and experiences, and make a positive impact on society.</p>
+      <p className="mt-4">By joining the association, you&apos;ll have the opportunity to lay a strong foundation for our community, meet new people, learn new skills, share your ideas and experiences, and make a positive impact on society.</p>
       </div>
     </main>
   );

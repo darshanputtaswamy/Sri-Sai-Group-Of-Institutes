@@ -80,7 +80,7 @@ const Events = [
         description: (
             <>
                 <p>
-                    Join us in celebrating Ganesh Festival 2025! Experience the joy and devotion of this auspicious occasion with traditional rituals, music, dance, and delicious Indian cuisine. Let's come together to honor Lord Ganesha and enjoy a festive evening with our community. Don't miss it!.
+                    Join us in celebrating Ganesh Festival 2025! Experience the joy and devotion of this auspicious occasion with traditional rituals, music, dance, and delicious Indian cuisine. Let&apos;s come together to honor Lord Ganesha and enjoy a festive evening with our community. Don&apos;t miss it!.
                 </p>
             </>
         ),
@@ -103,7 +103,7 @@ const Events = [
         description: (
             <>
                 <p>
-                    You are cordially invited to our Navaratri Pooja celebration! Come and immerse yourself in the vibrant festivities with traditional prayers, Garba dance, and delicious Indian food. Let's honor the divine feminine and celebrate these auspicious nine nights together!
+                    You are cordially invited to our Navaratri Pooja celebration! Come and immerse yourself in the vibrant festivities with traditional prayers, Garba dance, and delicious Indian food. Let&apos;s honor the divine feminine and celebrate these auspicious nine nights together!
                 </p>
             </>
         ),
