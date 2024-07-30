@@ -1,8 +1,13 @@
+"use client"
 import { RegistrationForm } from "@/components/RegistrationForm";
+import TransitionEffect from "@/components/TransitionEffect";
+import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 export default function joinus() {
   return (
+    
+    <> <TransitionEffect />
     <main className="min-h-[60vh] flex flex-col  text-dark  dark:text-light">
     <div className="w-2/3 mx-auto my-7">
       <p className="mt-2">The Indian Association of Belgium invites you to be a part of our mission to build a vibrant, community-centric non-profit organization. Our primary goal is to promote the cultural, social, and professional interests of Indians living in Belgium while fostering friendship and cooperation between the Indian and Belgian communities.</p>
@@ -24,6 +29,6 @@ export default function joinus() {
 
       <p className="mt-4">By joining the association, you&apos;ll have the opportunity to lay a strong foundation for our community, meet new people, learn new skills, share your ideas and experiences, and make a positive impact on society.</p>
       </div>
-    </main>
+    </main></>
   );
 }

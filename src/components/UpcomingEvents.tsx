@@ -9,6 +9,18 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoIosPeople } from "react-icons/io";
 import { WiTime2 } from "react-icons/wi";
 
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "./aceternityui/animated-modal";
+
+import { motion } from "framer-motion";
+import { MdOutlineAppRegistration } from "react-icons/md";
+ 
+
 export function UpcomingEvents() {
     return (
 
@@ -48,14 +60,33 @@ export function UpcomingEvents() {
                                     <div className="flex flex-row "> <IoIosPeople size={'1.5em'} /> <div className="pl-1">{item.max_capacity} max people</div></div>
                                 </div>
                             </div>
-                            <button
-                            className="mt-4 mx-auto float w-60 bg-gradient-to-br relative group/btn from-black dark:from-gray-100 dark:to-gray-200 to-neutral-600 block dark:bg-zinc-800  text-light dark:text-dark rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-                            onClick={(e)=>{console.log(e)}}
-                        >
-                            Register
-                            <BottomGradient />
-                        </button>
+                            
 
+
+
+                        <Modal>
+        <ModalTrigger className="bg-dark dark:bg-light dark:text-black text-white flex justify-center group/modal-btn">
+          <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+            Register now
+          </span>
+          <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+          <MdOutlineAppRegistration size={'1.5rem'}/>
+          </div>
+        </ModalTrigger>
+        <ModalBody>
+          <ModalContent>
+           Registeration form
+          </ModalContent>
+          <ModalFooter className="gap-4">
+            <button className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
+              Cancel
+            </button>
+            <button className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28">
+              Book Now
+            </button>
+          </ModalFooter>
+        </ModalBody>
+      </Modal>
                         </div>
                     ))}
                 </div>

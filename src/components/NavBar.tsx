@@ -37,7 +37,7 @@ function CustomMobileLink({ href, title, classname, toggle }: {
     }
 
     return <button className={`${classname} relative group`} onClick={handleMobileClick}>{title}
-        <span className={`h-[2px] inline-block  bg-light dark:bg-dark absolute left-0 -bottom-1.5 group-hover:w-full transition-[width] ease-in duration-300 ${(pathname == href) ? 'w-full' : 'w-0'}
+        <span className={`h-[2px] inline-block  bg-dark dark:bg-light absolute left-0 -bottom-1.5 group-hover:w-full transition-[width] ease-in duration-300 ${(pathname == href) ? 'w-full' : 'w-0'}
         `}>&nbsp;</span>
     </button>
 }
@@ -66,7 +66,7 @@ export default function NavBar() {
             
             </nav>
         </div>
-        {isOpen ?<div className='min-w-[70vw] flex flex-col z-30 justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-light dark:te bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 lg:hidden '>
+        {isOpen ?<div className='min-w-[70vw] flex flex-col z-30 justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-light dark:text-dark bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 lg:hidden '>
             <nav className='flex flex-col '> 
                 <CustomMobileLink href={"/"} title="Home" classname="my-1" toggle={handleClick}/>
                 <CustomMobileLink href={"/events"} title="Events" classname="my-1" toggle={handleClick}/>
