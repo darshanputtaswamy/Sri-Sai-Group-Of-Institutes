@@ -44,12 +44,14 @@ export const useThemeSwitcher = () => {
 
 
     useEffect(() => {
-        if (mode == 'dark' || window.localStorage.getItem("theme") == 'dark') {
+        if (mode == 'dark') {
             window.localStorage.setItem("theme", 'dark')
             document.documentElement.classList.add('dark')
-        } else {
+        } else if(mode == 'light') {
             window.localStorage.setItem("theme", 'light')
             document.documentElement.classList.remove('dark')
+        }else {
+            document.documentElement.classList.add(window.localStorage.getItem("theme"))
         }
 
     }, [mode])
