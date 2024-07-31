@@ -42,15 +42,16 @@ export default function Footer() {
     return (
         <footer >
             <div className="flex flex-col  my-4 lg:mt-32 justify-center ">
-                <div className='flex w-full  justify-center'>
+                <div className='flex w-full justify-center'>
                     <p className="md:text-base text-sm md:font-normal font-light">
                         For query&apos;s please contact us on <span className='text-blue-500'> info@indianassociation.be </span>
                     </p>
                 </div >
 
                 <div className='flex flex-col w-2/4 mx-auto mt-5 justify-center'>
+                <div className='flex w-full justify-center'>
                     <p className="md:text-base text-sm md:font-normal font-light" >Subscribe to our mailing list to stay informed about upcoming events and initiatives. By providing your email address, you consent to receive communications from our team about events and activities in accordance with GDPR.</p>
-
+                </div>
                     {!emailSent && <form className="my-8 flex mx-auto flex-col" onSubmit={handleSubmit}>
 
                         <LabelInputContainer className="w-60 ">

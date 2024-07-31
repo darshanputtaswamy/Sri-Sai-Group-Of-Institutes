@@ -6,7 +6,8 @@ import { BackgroundBeams } from "@/components/aceternityui/background-beams";
 import Footer from "@/components/Footer";
 import { ShootingStars } from "@/components/aceternityui/shooting-stars";
 import { StarsBackground } from "@/components/aceternityui/stars-background";
-const montserrat = Montserrat({ subsets: ["latin"], variable:'--font-mont' });
+import PageAnimatePresence from "@/components/PanageAnimatePresence";
+const montserrat = Montserrat({ subsets: ["latin"], variable: '--font-mont' });
 
 export const metadata: Metadata = {
   title: "Indian Association of Beligum",
@@ -22,14 +23,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
       </head>
-      
+
       <body className={`${montserrat.className} text-dark dark:text-light bg-light dark:bg-dark`}>
-    
+
         <Header></Header>
         <div className={"w-full h-full inline-block z-0"}>
-        <ShootingStars />
-      <StarsBackground />
-          {children}
+          <ShootingStars />
+          <StarsBackground />
+          <PageAnimatePresence>{children}</PageAnimatePresence>
         </div>
         <Footer />
       </body>

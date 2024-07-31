@@ -51,7 +51,7 @@ export function RegistrationForm() {
                     </LabelInputContainer>
                  
                     <button
-                            className="mt-4  w-60 bg-gradient-to-br relative group/btn from-black dark:from-gray-100 dark:to-gray-200 to-neutral-600 block dark:bg-zinc-800  text-light dark:text-dark rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                            className="mt-4  mx-auto w-60 bg-gradient-to-br relative group/btn from-black dark:from-gray-100 dark:to-gray-200 to-neutral-600 block dark:bg-zinc-800  text-light dark:text-dark rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset] "
                             type="submit"
                     >
                         Submit &rarr;
