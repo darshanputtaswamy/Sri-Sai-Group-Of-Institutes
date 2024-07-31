@@ -9,8 +9,7 @@ import React from 'react'
 
 export const useThemeSwitcher = () => {
     const preferDarkQuery = "(prefer-color-schema: dark)";
-    const userPref = window.localStorage.getItem("theme") || ""
-    const [mode, setMode] = useState(userPref)
+    const [mode, setMode] = useState("")
     useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery)
         const userPref = window.localStorage.getItem("theme")
@@ -45,7 +44,7 @@ export const useThemeSwitcher = () => {
 
 
     useEffect(() => {
-        if (mode == 'dark') {
+        if (mode == 'dark' || window.localStorage.getItem("theme") == 'dark') {
             window.localStorage.setItem("theme", 'dark')
             document.documentElement.classList.add('dark')
         } else {
