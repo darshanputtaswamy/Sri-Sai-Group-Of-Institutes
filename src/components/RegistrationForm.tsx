@@ -27,58 +27,10 @@ export function RegistrationForm() {
 
     };
     return (
-        <div className="flex flex-col justify-around  sm:flex-row md-flex-row ">
+        <div className="flex flex-col justify-around  sm:flex-row md-flex-row mt-32">
 
             <div  id="contact-form" className="max-w-md w-full  rounded-2xl shadow-input bg-light dark:bg-dark">
-                { !emailSent && <form ref={form} className="my-8" onSubmit={handleSubmit}>
-                    <LabelInputContainer className="mb-4">
-                        <Label htmlFor="client_name">Name</Label>
-                        <Input id="client_name" name="client_name" placeholder="Anil Kumar" type="text"  />
-                    </LabelInputContainer>
-                    <LabelInputContainer className="mb-4">
-                        <Label htmlFor="client_email">Email Address</Label>
-                        <Input id="client_email" name="client_email" placeholder="projectmayhem@fc.com" type="email"   />
-                    </LabelInputContainer>
-
-                    <LabelInputContainer className="mb-4">
-                        <Label htmlFor="client_phone">Phone or Mobile</Label>
-                        <Input id="client_phone"  name="client_phone" placeholder="+919900990099" type="phone"  />
-                    </LabelInputContainer>
-
-                    <LabelInputContainer className="mb-4">
-                        <Label htmlFor="client_comments">Area of Interest*</Label>
-                        <TextArea id="client_comments" name="client_comments" placeholder="additional details" type="textarea"  />
-                    </LabelInputContainer>
-                 
-                    <button
-                            className="mt-4  mx-auto w-60 bg-gradient-to-br relative group/btn from-black dark:from-gray-100 dark:to-gray-200 to-neutral-600 block dark:bg-zinc-800  text-light dark:text-dark rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset] "
-                            type="submit"
-                    >
-                        Submit &rarr;
-                        <BottomGradient />
-                    </button>
-                </form>
-                } 
-
-                {
-                    emailSent &&  <div className="mt-5 relative">
-                    {/* button border magic from tailwind css buttons  */}
-                    {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-                    {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-                    {/* add handleCopy() for the copy the text */}
-                    <div
-                      className={`absolute -bottom-5 right-0 block`}
-                    >
-                      <Lottie options={defaultOptions} height={200} width={400} />
-                    </div>
-      
-                    <MagicButton
-                      title={"Thanks for reaching out!!. Will we get back to you. "}
-                      otherClasses="!bg-[#161A31]"
-                    />
-                  </div>
-
-                }
+            <iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"  scrolling="no" ></iframe><br />
             </div >
 
             <div className="flex flex-col  my-auto">
