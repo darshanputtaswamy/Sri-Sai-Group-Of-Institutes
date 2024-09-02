@@ -5,17 +5,16 @@ const VisionMission = () => {
     return (
       <div className="w-full">
         <div className="w-[80vw] mt-12  mx-auto grid lg:grid-cols-2 grid-cols-1 gap-10 ">
-          {[{title:'Our Vision', desc:'Our vision is to create a vibrant and inclusive community that celebrates and preserves the rich cultural heritage of India while fostering a strong sense of belonging among Indians in Belgium. We aim to be a bridge that connects Indian culture with the broader Belgian society, promoting mutual understanding and cultural exchange.'},
-            {title:'Our Mission',desc: 'Our mission is to unite the Indian community in Belgium through cultural events, support services, and educational initiatives. We are dedicated to sharing the beauty and diversity of Indian culture, providing a platform for artistic expression, and offering resources to help our members thrive. Through our efforts, we aspire to build a supportive network that celebrates our shared heritage and contributes to the multicultural landscape of Belgium.'}].map((card:any) => (
+          {[{title:'Our Vision', desc:'To be a beacon of holistic education, empowering rural youth and children with knowledge, skills, and values, fostering a society where every individual can achieve their fullest potential and contribute positively to the world.'},
+            {title:'Our Mission',desc: 'At Sri Sai Group of Institutes, our mission is to provide inclusive, high-quality education across various disciplines, from foundational schooling to professional courses. We are committed to nurturing talent, promoting gender equality through scholarships, and empowering the youth in rural communities with the knowledge and skills needed for personal and professional growth. Guided by a team of dedicated and highly educated faculty, we strive to create an environment that inspires lifelong learning, critical thinking, and ethical leadership.'}].map((card:any) => (
             <Button
               key={card.id}
-              //   random duration will be fun , I think , may be not
               duration={Math.floor(Math.random() * 10000) + 10000}
               borderRadius="1.2rem"
               style={{
                 //   add these two
                 //   you can generate the color from here https://cssgradient.io/
-                background: "rgb(4,7,29)",
+                background: "rgb(79 80 80)",
                 backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
                 // add this border radius to make it more rounded so that the moving border is more realistic
                 borderRadius: `calc(1.75rem* 0.96)`,
@@ -25,7 +24,7 @@ const VisionMission = () => {
             >
               <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 ">
                 <div className="lg:ms-5">
-                  <h1 className=" text-light dark:text-light text-start text-xl md:text-2xl font-bold">
+                  <h1 className=" text-light dark:text-light text-start text-xl md:text-3xl font-bold">
                     {card.title}
                   </h1>
                   <p className="text-light dark:text-light text-start text-white-100 mt-3 font-semibold">

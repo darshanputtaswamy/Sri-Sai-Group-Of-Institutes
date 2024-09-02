@@ -59,20 +59,21 @@ export default function NavBar() {
         </button>
         <div className='hidden w-fill lg:flex items-center justify-between'>
             <nav>
-                <CustomLink href={"/"} title="Home" classname="mr-4" />
-                <CustomLink href={"/events"} title="Events" classname="mr-4" />
-                <CustomLink href={"/blogs"} title="Blogs" classname="mr-4" />
-                <CustomLink href={"/join-us"} title="Join Us" classname="mr-4" />
-            
+                <CustomLink key={1} href={"/"} title="Home" classname="mr-4" />
+                <CustomLink key={2} href={"/colleges"} title="Colleges" classname="mr-4" />
+                <CustomLink key={3} href={"/courses"} title="Courses" classname="mr-4" />
+                <CustomLink key={5} href={"/gallery"} title="Gallery" classname="mr-4" />
+                <CustomLink key={6} href={"/contact"} title="Contacts" classname="mr-4" />
             </nav>
+            <ThemeSwitch className="hidden lg:block"/>
         </div>
         {isOpen ?<div className='min-w-[70vw] flex flex-col z-30 justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-light dark:text-dark bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 lg:hidden '>
             <nav className='flex flex-col '> 
                 <CustomMobileLink href={"/"} title="Home" classname="my-1" toggle={handleClick}/>
-                <CustomMobileLink href={"/events"} title="Events" classname="my-1" toggle={handleClick}/>
-                <CustomMobileLink href={"/blogs"} title="Blogs" classname="my-1" toggle={handleClick}/>
-                <CustomMobileLink href={"/join-us"} title="Join Us" classname="my-1" toggle={handleClick}/>
-            
+                <CustomMobileLink href={"/colleges"} title="Colleges" classname="my-1" toggle={handleClick}/>
+                <CustomMobileLink href={"/courses"} title="Courses" classname="my-1" toggle={handleClick}/>
+                <CustomMobileLink href={"/gallery"} title="Gallery" classname="my-1" toggle={handleClick}/>
+                <CustomMobileLink href={"/contact"} title="Contacts" classname="my-1" toggle={handleClick}/>
             </nav>
         </div>:null}
         { <ThemeSwitch className="m-3 fixed bottom-0 right-0 lg:hidden"/>}
