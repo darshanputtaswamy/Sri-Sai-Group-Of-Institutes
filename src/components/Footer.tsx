@@ -44,29 +44,28 @@ export default function Footer() {
     return (
         <footer >
             <div className="flex flex-col  py-10 lg:mt-32 px-5 justify-center bg-slate-300 dark:bg-slate-800 text-black dark:text-white">
-                <div className='flex w-full justify-left'>
-             
-
+                <div className='justify-left'>
+                <div className="pb-5">Main Office</div>
                     <ul className="elementor-icon-list-items">
-                        <li className="flex gap-1">
-                            <span className="elementor-icon-list-icon">
+                        <li className="flex items  ">
+                            <span className="">
                                 <FaLocationDot />						</span>
-                            <span className="elementor-icon-list-text">No 396, 1st Floor, OOOLIGA Complex<br/>Sampige road 8th Cross, Malleshwaram <br/>Bangalore - 560003</span>
+                            <span className="pl-10">No 396, 1st Floor, OOOLIGA Complex<br/>Sampige road 8th Cross, Malleshwaram <br/>Bangalore - 560003</span>
                             </li>
                                 <li className="elementor-icon-list-item">
-                                    <a href="tel:8884888883" className="flex gap-1">
+                                    <a href="tel:8884888883" className="flex gap-1 pt-5">
 
-                                        <span className="elementor-icon-list-icon">
+                                        <span className="">
                                             <FaPhoneVolume />						</span>
-                                        <span className="elementor-icon-list-text">+91 9902586939</span>
+                                        <span className="pl-10">+91 9902586939</span>
                                     </a>
                                 </li>
                                 <li className="elementor-icon-list-item">
-                                    <a href="mailto:info@bgscollege.com" className="flex gap-1">
+                                    <a href="mailto:info@bgscollege.com" className="flex gap-1 pt-5">
 
-                                        <span className="elementor-icon-list-icon">
+                                        <span className="">
                                             <TfiEmail />						</span>
-                                        <span className="elementor-icon-list-text">srisaigroupofinstitutes@gmail.com</span>
+                                        <span className="pl-10">srisaigroupofinstitutes@gmail.com</span>
                                     </a>
                                 </li>
                             </ul>
