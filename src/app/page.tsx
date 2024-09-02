@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <> <TransitionEffect />
     <main className=" min-h-[60vh] flex flex-col  text-dark  dark:text-light">
-    <Image src="http://saibabalives.org/assets/images/saibaba_unique.png"  alt={"siradi sri sai baba"}   height="500"
+    <Image src="http://saibabalives.org/assets/images/saibaba_unique.png"  alt={"sri sai group of institutes- sai baba photo"}   height="500"
                                         width="1500"/>
    <AudioPlayer />
    <VisionMission />
