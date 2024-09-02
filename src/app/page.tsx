@@ -9,20 +9,30 @@ import TransitionEffect from "@/components/TransitionEffect";
 import { ImagesSlider } from "@/components/aceternityui/images-slider";
 import AudioPlayer from "@/components/audioplayer";
 import banner from "../../public/saibaba_unique.png"
+import { WhyUs } from "@/components/whyus";
+import { ImagesSliderDemo } from "@/components/ImageSlide";
 
 export default function Home() {
   const images = [
     "/madhyanarati_270.jpg",
   ];
-  
+
   return (
     <> <TransitionEffect />
-    <main className=" min-h-[60vh] flex flex-col  text-dark  dark:text-light">
-    <Image src={banner.src}  alt={"sri sai group of institutes- sai baba photo"}   height="500"
-                                        width="1500"/>
-   <AudioPlayer />
-   <VisionMission />
-    </main>
-   
-    </>  );
+      <main className=" min-h-[60vh] flex flex-col  text-dark  dark:text-light">
+        <Image
+          src={banner.src}
+          alt="Sri Sai Group of Institutes - Sai Baba Photo"
+          layout="responsive"
+          width={1500} // Original width of the image
+          height={500} // Original height of the image
+          style={{ width: '100%', height: 'auto' }} // Ensures full width and maintains aspect ratio
+        />
+        <AudioPlayer />
+        <VisionMission />
+        <WhyUs />
+        <ImagesSliderDemo />
+      </main>
+
+    </>);
 }
