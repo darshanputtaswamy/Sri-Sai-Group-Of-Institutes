@@ -68,6 +68,7 @@ export default function ThemeSwitch({ className }: {
         <button onClick={(evt) => {
             evt.stopPropagation()
             setMode(mode === "light" ? "dark" : "light")
+            window.dispatchEvent(new Event('themeChange'));
         }} className={`${className} ml-3 flex items-center justify-center rounded-full p-1 ${mode == "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>
             {mode === 'dark' ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
         </button>

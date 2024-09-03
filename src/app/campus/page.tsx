@@ -10,6 +10,9 @@ export default function campus() {
 
   return (
     <> <TransitionEffect />
+
+<ShootingStars />
+    <StarsBackground />
       <main className="w-[80%] mx-auto mt-5">
         <div className="flex flex-col md:flex-row gap-5 justify-evenly ">
           {
@@ -19,6 +22,7 @@ export default function campus() {
             })
           }
         </div>
-      </main></>
+      </main>
+      </>
   );
 } 

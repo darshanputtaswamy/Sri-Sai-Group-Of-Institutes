@@ -29,7 +29,7 @@ const CampusPhotos = ({ photos }:any) => {
   return (
     <div className="mt-6">
       <h3 className="text-2xl font-semibold">Campus Photos</h3>
-      <ParallaxScroll images={photos} />;
+      <ParallaxScroll images={photos} />
     </div>
   );
 };
@@ -52,10 +52,16 @@ export default function page({ params }: { params: { campusId: string } }) {
   const campus = campus_details.find((campus: any) => campus.id === params.campusId);
 
   return (
-    <div className="mx-auto py-10 px-20">
+    <> 
+   
+    <div className="mx-auto py-10 px-20 z-50">
+   
       <CampusDetails title={campus.title} description={campus.description} imageLocation={campus.image_location} />
       <CoursesOffered courses={campus.courses_offered} />
       <CampusPhotos photos={campus.campus_photos} />
-    </div>
+    </div> 
+  
+    
+    </>
   );
 }

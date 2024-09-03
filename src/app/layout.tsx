@@ -4,9 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { BackgroundBeams } from "@/components/aceternityui/background-beams";
 import Footer from "@/components/Footer";
-import { ShootingStars } from "@/components/aceternityui/shooting-stars";
-import { StarsBackground } from "@/components/aceternityui/stars-background";
+
 import PageAnimatePresence from "@/components/PanageAnimatePresence";
+import { ShootingStars } from "@/components/aceternityui/shooting-stars";
 const montserrat = Montserrat({ subsets: ["latin"], variable: '--font-mont' });
 
 export const metadata: Metadata = {
@@ -28,8 +28,7 @@ export default function RootLayout({
 
         <Header></Header>
         <div className={"w-full h-full inline-block z-0"}>
-          <ShootingStars />
-          <StarsBackground />
+        <ShootingStars />
           <PageAnimatePresence>{children}</PageAnimatePresence>
         </div>
         <Footer />

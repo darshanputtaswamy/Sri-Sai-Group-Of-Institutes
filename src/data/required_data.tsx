@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export let campus_details: any = [
     {
         "title": "Narayanapura Campus",
@@ -50,3 +52,168 @@ export let campus_details: any = [
         ]
     }
 ]
+
+ 
+
+export let course_details = [
+    {
+      id:"management",
+      linkHref: '/courses/management',
+      title: "Management Courses",
+      description:
+        "Our Management Courses encompass a wide range of disciplines, including BCA, BBA, MBA, B.Ed, and more. Whether you're looking to study full-time or prefer a part-time or correspondence course, we offer flexible options to suit your lifestyle. Our programs are designed to equip you with the necessary skills to excel in the dynamic field of management.",
+        detailed_description: "We offer various management courses including BBA, MBA, and more. These programs are designed to equip students with the essential skills and knowledge needed for successful careers in management.",
+        categories:  [
+            {
+              "name": "BBA",
+              "duration": "3 Years",
+              "eligibility": "Completion of secondary education (12th grade) or equivalent.",
+              "affiliation": "Bangalore University"
+            },
+            {
+              "name": "MBA",
+              "duration": "2 Years",
+              "eligibility": "The candidate must hold a Bachelor's degree from a recognized board.",
+              "affiliation": "Bangalore University"
+            },
+            {
+              "name": "B.Ed",
+              "duration": "2 Years",
+              "eligibility": "Completion of undergraduate studies in any discipline.",
+              "affiliation": "Bangalore University"
+            },
+            {
+              "name": "BCA",
+              "duration": "3 Years",
+              "eligibility": "Completion of secondary education (12th grade) or equivalent with Mathematics as a subject.",
+              "affiliation": "Bangalore University"
+            }
+          ],
+      content: (
+        <Link href="/courses/management">
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+            Management
+          </div>
+        </Link>
+      ),
+    },
+    {
+      id:"puc",
+      linkHref: '/courses/puc',
+      title: "Pre University Courses",
+      description:
+        "Our Pre University Courses (PUC) offer a comprehensive foundation for higher education, with major options including PCMB, EBACs, HEBA, and HEPS. These courses are designed to provide students with the essential knowledge and skills required for pursuing specialized education or professional careers. Explore our PUC offerings to start your academic journey with a solid base.",
+      
+      detailed_description: "Pre University Courses provide a strong foundation for students intending to pursue higher education. Major options include PCMB, EBACs, HEBA, and HEPS.",
+    
+     categories: [
+        {
+          "name": "PCMB",
+          "duration": "2 Years",
+          "eligibility": "Pass in 10th grade or equivalent.",
+          "affiliation": "State Pre University Board"
+        },
+        {
+          "name": "EBACs",
+          "duration": "2 Years",
+          "eligibility": "Pass in 10th grade or equivalent.",
+          "affiliation": "State Pre University Board"
+        },
+        {
+          "name": "HEBA",
+          "duration": "2 Years",
+          "eligibility": "Pass in 10th grade or equivalent.",
+          "affiliation": "State Pre University Board"
+        },
+        {
+          "name": "HEPS",
+          "duration": "2 Years",
+          "eligibility": "Pass in 10th grade or equivalent.",
+          "affiliation": "State Pre University Board"
+        }
+      ],
+      content: (
+        <Link href="/courses/puc">
+          <div className="h-full w-full flex items-center justify-center text-white">
+            Pre University Courses ( PUC )
+          </div>
+        </Link>
+      ),
+    },
+    {
+      id:"professional",
+      linkHref: '/courses/professional',
+      title: "Professional Courses",
+      description: "Our Professional Courses include Law (3-year and 5-year programs), Paramedical courses, and Engineering. These programs are tailored for both full-time and part-time students, providing flexibility for those balancing education with other commitments. We are constantly expanding our offerings, ensuring you have access to cutting-edge professional education that aligns with industry demands.",
+      detailed_description: "Our Professional Courses cover specialized fields including Law, Paramedical courses, and Engineering, providing flexible learning options.",
+      categories: [
+        {
+          "name": "Law",
+          "duration": "3-5 Years",
+          "eligibility": "Pass in 12th grade or equivalent.",
+          "affiliation": "Bar Council of India"
+        },
+        {
+          "name": "Paramedical",
+          "duration": "3-4 Years",
+          "eligibility": "Pass in 12th grade with Science (PCB).",
+          "affiliation": "State Medical Council"
+        },
+        {
+          "name": "Engineering",
+          "duration": "4 Years",
+          "eligibility": "Pass in 12th grade with Physics, Chemistry, and Mathematics.",
+          "affiliation": "AICTE"
+        }
+      ],
+      content: (
+        <Link href="/courses/professional">
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+            Professional Courses
+          </div>
+        </Link>
+      ),
+    },
+    {
+      id:"correspondence",
+      linkHref: '/courses/correspondence',
+      title: "Correspondence Courses",
+      description:
+        "Our Correspondence Courses allow you to pursue a variety of undergraduate, postgraduate, and professional degrees without sacrificing your career. Ideal for working professionals, these courses provide the flexibility to study at your own pace, ensuring you can achieve your educational goals while maintaining your job. Explore our extensive range of correspondence programs to advance your qualifications.",
+      detailed_description: "Our Correspondence Courses allow you to pursue undergraduate, postgraduate, and professional degrees while balancing work and study.",
+ 
+      categories: [
+        {
+          "name": "BBA",
+          "duration": "3 Years",
+          "eligibility": "Completion of secondary education (12th grade) or equivalent.",
+          "affiliation": "Bangalore University"
+        },
+        {
+          "name": "MBA",
+          "duration": "2 Years",
+          "eligibility": "The candidate must hold a Bachelor's degree from a recognized board.",
+          "affiliation": "Bangalore University"
+        },
+        {
+          "name": "B.Com",
+          "duration": "3 Years",
+          "eligibility": "Completion of secondary education (12th grade) or equivalent.",
+          "affiliation": "Bangalore University"
+        },
+        {
+          "name": "M.Com",
+          "duration": "2 Years",
+          "eligibility": "The candidate must hold a Bachelor's degree from a recognized board.",
+          "affiliation": "Bangalore University"
+        }
+      ],
+      content: (
+        <Link href="/courses/correspondence">
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+            Correspondence Courses
+          </div>
+        </Link>
+        ),
+    }
+  ];

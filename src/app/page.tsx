@@ -12,7 +12,8 @@ import banner from "../../public/saibaba_unique.png"
 import { WhyUs } from "@/components/whyus";
 import { ImagesSliderDemo } from "@/components/ImageSlide";
 import { PresidentsMessage } from "@/components/PresidentsMessage";
-
+import { ShootingStars } from "@/components/aceternityui/shooting-stars";
+import { StarsBackground } from "@/components/aceternityui/stars-background";
 export default function Home() {
   const images = [
     "/madhyanarati_270.jpg",
@@ -42,5 +43,7 @@ export default function Home() {
         </div>
       </main>
 
+      <ShootingStars />
+          <StarsBackground />
     </>);
 }
