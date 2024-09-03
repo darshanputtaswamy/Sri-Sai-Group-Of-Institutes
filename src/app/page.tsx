@@ -11,6 +11,7 @@ import AudioPlayer from "@/components/audioplayer";
 import banner from "../../public/saibaba_unique.png"
 import { WhyUs } from "@/components/whyus";
 import { ImagesSliderDemo } from "@/components/ImageSlide";
+import { PresidentsMessage } from "@/components/PresidentsMessage";
 
 export default function Home() {
   const images = [
@@ -32,6 +33,11 @@ export default function Home() {
         <VisionMission />
         <WhyUs />
         <ImagesSliderDemo />
+        <div className=" w-[80%] mx-auto my-5 block">
+          
+          <PresidentsMessage />
+          
+        </div>
       </main>
 
     </>);
