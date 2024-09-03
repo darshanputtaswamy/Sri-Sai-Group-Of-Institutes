@@ -7,10 +7,12 @@ export default function AudioPlayer() {
   useEffect(() => {
     // Set the audio volume to 60%
     if (audioRef.current) {
-      audioRef.current.volume = 0.1;
+      audioRef.current.volume = 0.05;
       audioRef.current.play();
     }
   }, []);
+
+  
 
   return (
     <div className="audio-container">

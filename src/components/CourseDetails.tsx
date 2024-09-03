@@ -10,6 +10,7 @@ export interface CourseDetails {
 }
 
 import Image from "next/image";
+import Link from 'next/link';
 interface CoursePageProps {
     course: any;
 }
@@ -103,12 +104,12 @@ const CoursePage: React.FC<CoursePageProps> = ({ course }) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.2, duration: 0.6, ease: "easeInOut" }}
                 >
-                    <a
-                        href="/contact"
+                    <Link
+                        href="./contact"
                         className={`px-4 py-2 rounded-md dark:bg-cyan-500 dark:text-white bg-emerald-500 text-black transition-all hover:opacity-80`}
                     >
                         For Admission &  Enquiry
-                    </a>
+                    </Link>
                 </motion.div>
             </section>
         </div>
