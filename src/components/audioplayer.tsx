@@ -15,7 +15,7 @@ export default function AudioPlayer() {
   return (
     <div className="audio-container">
       <audio ref={audioRef} controls loop>
-        <source src="/bg.mp3" type="audio/mpeg" />
+        <source src="./bg.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
