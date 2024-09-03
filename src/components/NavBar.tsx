@@ -62,7 +62,6 @@ export default function NavBar() {
                 <CustomLink key={1} href={"/"} title="Home" classname="mr-4" />
                 <CustomLink key={2} href={"/campus"} title="Campus" classname="mr-4" />
                 <CustomLink key={3} href={"/courses"} title="Courses" classname="mr-4" />
-                <CustomLink key={5} href={"/gallery"} title="Gallery" classname="mr-4" />
                 <CustomLink key={6} href={"/contact"} title="Contacts" classname="mr-4" />
             </nav>
             <ThemeSwitch className="hidden lg:block"/>
@@ -72,7 +71,6 @@ export default function NavBar() {
                 <CustomMobileLink href={"/"} title="Home" classname="my-1" toggle={handleClick}/>
                 <CustomMobileLink href={"/campus"} title="Campus" classname="my-1" toggle={handleClick}/>
                 <CustomMobileLink href={"/courses"} title="Courses" classname="my-1" toggle={handleClick}/>
-                <CustomMobileLink href={"/gallery"} title="Gallery" classname="my-1" toggle={handleClick}/>
                 <CustomMobileLink href={"/contact"} title="Contacts" classname="my-1" toggle={handleClick}/>
             </nav>
         </div>:null}
