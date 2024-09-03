@@ -12,7 +12,7 @@ export function PresidentsMessage() {
             <BackgroundGradient className="rounded-[22px] h-[40rem] md:h-[25rem] flex flex-col-reverse md:flex-row p-4 sm:p-10 bg-white dark:bg-zinc-900">
        
                 <div className="md:p-4 md:mt-6">
-                    <p className="text-base sm:text-xl text-black md:mt-20 md:mb-2 dark:text-neutral-200">
+                    <p className="text-base sm:text-xl text-black mt-5 md:mt-20 md:mb-2 dark:text-neutral-200">
                         Dr. B Manjunath, President
                     </p>
 
