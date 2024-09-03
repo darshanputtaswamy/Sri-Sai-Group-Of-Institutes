@@ -31,8 +31,10 @@ export default function Home() {
         />
         <AudioPlayer />
         <VisionMission />
+        <div className=" w-[80%] mx-auto mt-5 block">
+          <ImagesSliderDemo />
+        </div>
         <WhyUs />
-        <ImagesSliderDemo />
         <div className=" w-[80%] mx-auto my-5 block">
           
           <PresidentsMessage />
