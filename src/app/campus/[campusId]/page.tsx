@@ -38,7 +38,7 @@ const CoursesOffered = ({ courses }: any) => {
   return (
     <div className="mt-6">
       <h3 className="text-2xl font-semibold">Courses Offered</h3>
-      <ul className="list-disc mt-2">
+      <ul className="list-disc m-2 p-4">
         {courses.map((course: any, index: any) => (
           <li key={index}>{course}</li>
         ))}
