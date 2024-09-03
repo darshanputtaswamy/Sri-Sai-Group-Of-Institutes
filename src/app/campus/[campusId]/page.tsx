@@ -1,67 +1,28 @@
-import React from 'react'
-import { ShootingStars } from "@/components/aceternityui/shooting-stars";
-import { StarsBackground } from "@/components/aceternityui/stars-background";
-import { ThreeDCardDemo } from "@/components/TestCard";
-import TransitionEffect from "@/components/TransitionEffect";
-import Image from "next/image";
-import { campus_details } from "../../../data/required_data"
-import { ParallaxScroll } from '@/components/aceternityui/parallex-loader';
 
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { campus_details } from '../../../data/required_data';
+import {  CampusDetailsView, CampusPhotosView, CoursesOfferedView } from './CampusDetails';
 
 export const dynamicParams = true;
 export async function generateStaticParams() {
-  return [{ campusId: "campus-narayanapura" }, { campusId: "campus-vijipura" }];
+  return [{ campusId: 'campus-narayanapura' }, { campusId: 'campus-vijipura' }];
 }
 
 
-
-const CampusDetails = ({ title, description, imageLocation }: any) => {
-  return (
-    <div className="mt-6">
-      <h2 className="text-4xl font-bold">{title}</h2>
-      <p className="mt-2">{description}</p>
-    </div>
-  );
-};
-
-
-const CampusPhotos = ({ photos }:any) => {
-  return (
-    <div className="mt-6">
-      <h3 className="text-2xl font-semibold">Campus Photos</h3>
-      <ParallaxScroll images={photos} />
-    </div>
-  );
-};
-
-const CoursesOffered = ({ courses }: any) => {
-  return (
-    <div className="mt-6">
-      <h3 className="text-2xl font-semibold">Courses Offered</h3>
-      <ul className="list-disc m-2 p-4">
-        {courses.map((course: any, index: any) => (
-          <li key={index}>{course}</li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-
-export default function page({ params }: { params: { campusId: string } }) {
+export default function CampusPage({ params }: { params: { campusId: string } }) {
   const campus = campus_details.find((campus: any) => campus.id === params.campusId);
 
   return (
-    <> 
-   
-    <div className="mx-auto py-10 px-20 z-50">
-   
-      <CampusDetails title={campus.title} description={campus.description} imageLocation={campus.image_location} />
-      <CoursesOffered courses={campus.courses_offered} />
-      <CampusPhotos photos={campus.campus_photos} />
-    </div> 
-  
-    
-    </>
+    <div className="w-[80%] mt-5 mx-auto py-10 px-6 sm:px-10 lg:px-20 z-50 dark:bg-slate-900 bg-slate-200 rounded-lg shadow-lg">
+      <CampusDetailsView
+        title={campus.title}
+        description={campus.description}
+        imageLocation={campus.image_location}
+      />
+      <CoursesOfferedView courses={campus.courses_offered} />
+      <CampusPhotosView photos={campus.campus_photos} />
+    </div>
   );
 }

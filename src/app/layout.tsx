@@ -28,7 +28,7 @@ export default function RootLayout({
 
         <Header></Header>
         <div className={"w-full h-full inline-block z-0"}>
-        <ShootingStars />
+     
           <PageAnimatePresence>{children}</PageAnimatePresence>
         </div>
         <Footer />
