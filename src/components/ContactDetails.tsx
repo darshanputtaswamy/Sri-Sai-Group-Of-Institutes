@@ -74,11 +74,11 @@ const ContactCard: React.FC<ContactDetails> = ({
 
 const CampusContactPage: React.FC = () => {
     return (
-        <div className="p-4 dark:bg-slate-900 dark:text-white bg-white text-black">
-            <section className="max-w-7xl mx-auto">
+        <div className="m-0 md:p-4 dark:bg-slate-900 dark:text-white bg-white text-black">
+            <section className="w-full md:max-w-7xl mx-auto">
                 <div className="text-center">
                     <motion.h2
-                        className="text-4xl font-bold mb-4"
+                        className="text-xl md:text-4xl font-bold md:mb-4"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1.5, duration: 0.5 }}

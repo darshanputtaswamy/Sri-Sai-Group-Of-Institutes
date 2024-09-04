@@ -9,8 +9,8 @@ export default function joinus() {
   return (
     
     <> <TransitionEffect />
-    <main className="min-h-[60vh] flex flex-col  text-dark  dark:text-light">
-    <div className="w-2/3 mx-auto my-7">
+    <main className="md:min-h-[60vh] flex flex-col  text-dark  dark:text-light">
+    <div className="w-[80%] md:w-2/3 mx-auto my-7">
       
       <CampusContactPage />
        </div>
