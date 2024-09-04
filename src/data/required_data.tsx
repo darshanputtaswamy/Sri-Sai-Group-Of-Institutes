@@ -225,7 +225,7 @@ export let course_details = [
       "branchName": "Narayanapura Campus",
       "address": ( <> 123 Narayanapura Road, <br/> Bangalore, Karnataka 560010, India </>),
       "phoneNumbers": ["+91-9876543210", "+91-8765432109"],
-      "emailAddresses": ["info@narayanapuracampus.edu.in", "admissions@narayanapuracampus.edu.in"],
+      "emailAddresses": ["info@narayanapuracampus.edu.in",],
       "googleMapLink": "https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
     },
     {
@@ -239,7 +239,7 @@ export let course_details = [
       "branchName": "Banaglore Office",
       "address": ( <>No 396, 1st floor. OOLIGA Complex, <br/> Sampige road. 8th Cross. Malleshwaram,<br/> Bangalore 560003, Karnataka, India</>),
       "phoneNumbers": ["+91-5432109876", "+91-4321098765"],
-      "emailAddresses": ["info@kalyannagarcampus.edu.in", "admissions@kalyannagarcampus.edu.in"],
+      "emailAddresses": ["info@kalyannagarcampus.edu.in"],
       "googleMapLink": "https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
     }
   ];
